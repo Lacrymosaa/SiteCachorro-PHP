@@ -2,13 +2,7 @@
 <html>
 <head>
     <title>Listagem de Cachorros</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="listar.css">
 </head>
 <body>
     <?php
@@ -23,13 +17,15 @@
         }
     ?>
     <h1>Listagem de Cachorros</h1>
-    <a href="cadastro.php">Novo Cachorro</a>
+    <a href="cadastro.php" class="button">Novo Cachorro</a>
     <br><br>
+    <div id="busca">
     <form method="POST">
         <label for="busca">Buscar por nome:</label>
-        <input type="text" id="busca" name="busca">
+        <input type="text" name="busca">
         <button type="submit">Buscar</button>
     </form>
+    </div>
     <br><br>
     <table>
         <tr>

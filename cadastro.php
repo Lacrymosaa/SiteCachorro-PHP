@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Cadastrar cachorro</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <h1>Cadastrar cachorro</h1>

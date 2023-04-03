@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Edição de Cachorro</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <?php
