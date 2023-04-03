@@ -40,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" name="cor" required><br>
 
         <label>Sexo:</label>
-        <input type="radio" name="sexo" value="M" required> Macho
-        <input type="radio" name="sexo" value="F" required> Fêmea<br>
+        <input type="radio" name="sexo" value="Macho" required> Macho
+        <input type="radio" name="sexo" value="Femea" required> Fêmea<br>
 
         <input type="submit" value="Cadastrar">
     </form>

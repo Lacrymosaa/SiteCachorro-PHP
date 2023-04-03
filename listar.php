@@ -14,10 +14,23 @@
     <?php
         require_once('cachorro.php');
         $cachorro = new Cachorro();
-        $cachorros = $cachorro->listar();
+        $cachorros = array();
+
+        if (isset($_POST['busca']) && !empty($_POST['busca'])) {
+            $cachorros = $cachorro->buscarN($_POST['busca']);
+        } else {
+            $cachorros = $cachorro->listar();
+        }
     ?>
     <h1>Listagem de Cachorros</h1>
     <a href="cadastro.php">Novo Cachorro</a>
+    <br><br>
+    <form method="POST">
+        <label for="busca">Buscar por nome:</label>
+        <input type="text" id="busca" name="busca">
+        <button type="submit">Buscar</button>
+    </form>
+    <br><br>
     <table>
         <tr>
             <th>ID</th>

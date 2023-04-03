@@ -62,6 +62,13 @@ class Cachorro {
         $stmt->execute([$codigo]);
         return $stmt->fetch();
     }
+
+    public function buscarN($nome) {
+        $query = "SELECT * FROM cachorro WHERE nome = ?";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute([$nome]);
+        return $stmt->fetchAll();
+    }
 }
 
 ?>
