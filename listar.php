@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Listagem de Cachorros</title>
-    <link rel="stylesheet" href="listar.css">
+    <link rel="stylesheet" href="style/listar.css">
 </head>
 <body>
     <?php
-        require_once('cachorro.php');
+        require_once('src/cachorro.php');
         $cachorro = new Cachorro();
         $cachorros = array();
 
@@ -45,7 +45,7 @@
             <td><?php echo $c['sexo']; ?></td>
             <td>
                 <a href="edicao.php?codigo=<?php echo $c['codigo']; ?>">Editar</a>
-                <a href="exclusao.php?codigo=<?php echo $c['codigo']; ?>">Excluir</a>
+                <a href="src/exclusao.php?codigo=<?php echo $c['codigo']; ?>">Excluir</a>
             </td>
         </tr>
         <?php } ?>

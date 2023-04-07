@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Edição de Cachorro</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="style/register.css">
 </head>
 <body>
     <?php
-        require_once('cachorro.php');
+        require_once('src/cachorro.php');
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             // carrega os dados do cachorro a ser editado
             $cachorro = new Cachorro();

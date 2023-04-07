@@ -1,6 +1,6 @@
 <?php
-require_once 'conexao.php';
-require_once 'cachorro.php';
+require_once 'src/conexao.php';
+require_once 'src/cachorro.php';
 
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Cadastrar cachorro</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="style/register.css">
 </head>
 <body>
     <h1>Cadastrar cachorro</h1>
